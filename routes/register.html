@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+  <nav>
+    <h1>Online Voting Registration</h1>
+  </nav>
+
+  <div class="mainbox">
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+      <h1>Sign Up</h1>
+
+      <br/>
+
+      <div class="box1">
+      <input type="text" placeholder="Enter name" name="name" required/>
+      <input type="number" placeholder="Enter mobile" name="mobile" required/>
+      </div>
+
+      <div class="box2">
+      <input type="text" placeholder="Enter Password" name="password" required/>
+      <input type="text" placeholder="Confirm Password" name="cpassword" required/>
+      </div>
+
+      <input type="email" placeholder="Enter Email" name="email" class="emailwork" required/>
+
+      <div class="box3">
+        <p>Upload image: <input type="file" name="photo" accept="image/*" required/></p>
+      </div>
+
+
+      <div class="box4">
+
+      <h4>Select Your Role: </h4>
+      <select name="role">
+        <option value="1">Voter</option>
+        <option value="2">Group</option>
+      </select>
+      </div>
+
+      <div class="box5">
+      <button type="submit" name="submit" >Submit</button>
+      </div>
+
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>

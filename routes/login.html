@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Voting System</title>
+  <link rel="stylesheet"  href="../CSS/gaurav.css">
+</head>
+
+<body>
+
+      <!-- nav-section -->
+  <nav>
+    <a href="#">
+    <h1>Online Voting System</h1>
+    </a>
+  </nav>
+
+
+  <!-- form part -->
+
+
+  <div class="mainbox">
+
+  <form method="POST" action="../api/login.php" class="formwork">
+    <h1>Login</h1><br/><br/>
+
+    <input type="number" name="mobile" placeholder="Enter Number" required/><br/><br/>
+
+    <input type="text" name="password" placeholder="Enter Password" required/><br/><br/>
+
+    <!-- option -->
+
+    <select name="role">
+      <option value="1">Voter</option>
+      <option value="2">Group</option>
+    </select><br/>
+
+    <div class="mainbutton">
+    <button type="submit">Submit</button>
+    
+    </div>
+
+    
+
+    <div class="mainbutton">
+    <p>New User? <a href="register.html">Sign Up</a></p>
+    </div><br/>
+
+  </form> 
+
+  </div>
+  
+
+
+
+</body>
+
+</html>
